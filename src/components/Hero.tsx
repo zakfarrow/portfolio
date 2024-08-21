@@ -1,10 +1,9 @@
 export default function Hero() {
   return (
-    <div className="text-right">
+    <div className="">
       <h1 className="text-5xl font-medium">Hi, I`m Zak Farrow.</h1>
-      <p className="mt-6 text-2xl leading-8">
-        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-        cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+      <p className="mt-6 text-2xl max-w-sm leading-normal">
+        Intuitive, impactful digital experiences, made with <span className="text-[#dfb2d0]">love.</span>
       </p>
     </div>
   );
