@@ -15,13 +15,16 @@ const Home: React.FC = () => {
       <Navbar />
       <Hero />
       <button onClick={scrollToSection}>More</button>
-      <div ref={sectionRef} className="h-screen flex flex-col items-center justify-center">
-        <h1>Secton 1</h1>
+      <div
+        ref={sectionRef}
+        className="h-screen flex flex-col items-center justify-center"
+      >
+        <h1>Secton</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
           tempora. Earum magni quis excepturi nisi. Excepturi, ab voluptatum
           itaque tenetur magnam soluta optio nemo id expedita dolorem
-          accusantium, veritatis odio.
+          accusantium, veritatis odio ldf.
         </p>
       </div>
     </div>
