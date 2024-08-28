@@ -8,14 +8,14 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      header: ['Kalnia', 'serif'],
-      text: ['Poppins', 'sans-serif'],
+      header: ["Kalnia", "serif"],
+      text: ["Poppins", "sans-serif"],
     },
     extend: {
       transitionProperty: {
-          'width': 'width'
+        width: "width",
       },
-  },
+    },
   },
   plugins: [],
 };
