@@ -11,6 +11,11 @@ const config: Config = {
       header: ['Kalnia', 'serif'],
       text: ['Poppins', 'sans-serif'],
     },
+    extend: {
+      transitionProperty: {
+          'width': 'width'
+      },
+  },
   },
   plugins: [],
 };

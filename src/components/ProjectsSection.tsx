@@ -1,6 +1,6 @@
-const ProjectSection = () => {
+const ProjectsSection = () => {
   return (
-    <section id="project" className="scroll-mt-16 mb-16 flex flex-col gap-y-8">
+    <section id="projects" className="scroll-mt-16 mb-16 flex flex-col gap-y-8">
       <h1>Projects</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
@@ -33,4 +33,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default ProjectsSection;
