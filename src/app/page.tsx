@@ -9,7 +9,7 @@ import DocumentLink from "@/components/DocumentLink";
 
 const Home = () => {
   return (
-    <div className="mx-[8%] my-[8%] sm:flex sm:justify-between sm:gap-4 lg:mx-[5%] xl:mx-[10%]">
+    <div className="mx-[8%] my-[8%] sm:flex sm:justify-between sm:gap-4 md:my-0 lg:mx-[5%] xl:mx-[10%]">
       <header className="flex max-h-screen w-full flex-col items-end gap-y-12 pb-16 pt-24 md:sticky md:top-0 md:w-1/2 md:py-40 lg:px-12 xl:px-32">
         <Hero />
         <Navbar />
