@@ -4,7 +4,7 @@ export default function Hero() {
       <h1 className="font-header text-5xl font-semibold">
         Hi, I`m Zak Farrow.
       </h1>
-      <p className="mt-6 max-w-sm text-2xl leading-normal text-[#dfb2d0] opacity-100">
+      <p className="mt-6 text-2xl leading-normal text-[#dfb2d0] opacity-100">
         <span className="text-white opacity-60">
           Intuitive, impactful digital experiences, made with&nbsp;
         </span>

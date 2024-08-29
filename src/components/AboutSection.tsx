@@ -1,7 +1,6 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="mb-16 flex scroll-mt-40 flex-col">
-      <h1 className="pb-8 font-semibold">About Me</h1>
+    <section id="about" className="mb-16 flex scroll-mt-40 flex-col px-6">
       <p className="pb-4 opacity-60">
         Hi, I&apos;m Zak Farrow, a software engineer who loves turning complex
         ideas into smooth, user-friendly applications. With a strong background

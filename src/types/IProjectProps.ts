@@ -3,4 +3,5 @@ export default interface IProjectsProps {
   description: string;
   technologies: string[];
   image: string;
+  repoURL: string;
 }

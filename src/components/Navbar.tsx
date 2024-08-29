@@ -1,18 +1,36 @@
-import { link } from "fs";
+"use client";
+
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const Navbar: React.FC = () => {
   const [active, setActive] = useState<string>("");
+
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
       setActive(hash.substring(1));
     };
+
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let currentSectionId = "";
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top - 160 <= 0 && rect.bottom - 160 >= 0) {
+          currentSectionId = section.id;
+        }
+      });
+      setActive(currentSectionId);
+    };
+
     handleHashChange();
     window.addEventListener("hashchange", handleHashChange);
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
