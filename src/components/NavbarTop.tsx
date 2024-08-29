@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
-const Navbar: React.FC = () => {
+const NavbarTop: React.FC = () => {
   const [active, setActive] = useState<string>("");
 
   useEffect(() => {
@@ -12,30 +13,16 @@ const Navbar: React.FC = () => {
       setActive(hash.substring(1));
     };
 
-    const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      let currentSectionId = "";
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top - 160 <= 0 && rect.bottom - 160 >= 0) {
-          currentSectionId = section.id;
-        }
-      });
-      setActive(currentSectionId);
-    };
-
     handleHashChange();
     window.addEventListener("hashchange", handleHashChange);
-    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("hashchange", handleHashChange);
-      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <nav className="mx-auto my-auto hidden items-end gap-y-4 sm:flex-col md:static md:top-auto md:mx-0 md:flex">
+    <nav className="sticky top-0 z-20 flex justify-center gap-x-6 bg-white bg-opacity-10 py-4 backdrop-blur-md md:hidden">
       <Link
         href="#about"
         className={`hover-underline-animation w-fit ${active === "about" ? "active-underline" : ""}`}
@@ -57,8 +44,14 @@ const Navbar: React.FC = () => {
       >
         Contact
       </Link>
+      <div className="flex gap-x-2">
+        <a href="/CV.pdf" target="_blank" className="mt-auto">
+          CV
+        </a>
+        <ArrowUpRightIcon className="size-4" />
+      </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default NavbarTop;

@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="text-right">
+    <div className="md:text-right">
       <h1 className="font-header text-5xl font-semibold">
         Hi, I`m Zak Farrow.
       </h1>

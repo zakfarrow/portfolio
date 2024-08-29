@@ -24,7 +24,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="mb-16 flex scroll-mt-[8.5rem] flex-col gap-y-8"
+      className="mb-16 flex scroll-mt-20 flex-col gap-y-8 md:scroll-mt-40"
     >
       <h1 className="md:hidden">Projects</h1>
       {projects.map((project, index) => (

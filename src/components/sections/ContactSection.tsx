@@ -1,13 +1,13 @@
 import Image from "next/image";
-import linkedinIcon from "../../public/linkedin.svg";
-import githubIcon from "../../public/github.svg";
-import emailIcon from "../../public/email.svg";
+import linkedinIcon from "public/linkedin.svg";
+import githubIcon from "public/github.svg";
+import emailIcon from "public/email.svg";
 
 const ContactSection: React.FC = () => {
   return (
     <section
       id="contact"
-      className="mb-16 flex scroll-mt-40 flex-col md:px-6 md:pb-40"
+      className="mb-16 flex scroll-mt-20 flex-col md:scroll-mt-40 md:px-6 md:pb-40"
     >
       <h1 className="pb-8 md:hidden">Contact</h1>
       <p className="pb-8 opacity-80">

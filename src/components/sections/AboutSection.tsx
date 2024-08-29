@@ -1,6 +1,9 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="mb-16 flex scroll-mt-40 flex-col md:px-6">
+    <section
+      id="about"
+      className="mb-16 flex scroll-mt-20 flex-col md:scroll-mt-40 md:px-6"
+    >
       <h1 className="pb-8 md:hidden">About</h1>
       <p className="pb-4 opacity-60">
         Hi, I&apos;m Zak Farrow, a software engineer who loves turning complex
