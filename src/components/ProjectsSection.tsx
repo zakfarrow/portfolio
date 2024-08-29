@@ -26,6 +26,7 @@ const ProjectsSection = () => {
       id="projects"
       className="mb-16 flex scroll-mt-[8.5rem] flex-col gap-y-8"
     >
+      <h1 className="md:hidden">Projects</h1>
       {projects.map((project, index) => (
         <ProjectItem key={index} props={project} />
       ))}

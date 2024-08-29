@@ -1,6 +1,6 @@
 const DocumentLink = () => {
   return (
-    <div className="mt-auto flex gap-x-2">
+    <div className="flex gap-x-2">
       <a href="/CV.pdf" target="_blank" className="drop mt-auto text-base/4">
         Check out my CV
       </a>

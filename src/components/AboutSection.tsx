@@ -1,6 +1,7 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="mb-16 flex scroll-mt-40 flex-col px-6">
+    <section id="about" className="mb-16 flex scroll-mt-40 flex-col md:px-6">
+      <h1 className="pb-8 md:hidden">About</h1>
       <p className="pb-4 opacity-60">
         Hi, I&apos;m Zak Farrow, a software engineer who loves turning complex
         ideas into smooth, user-friendly applications. With a strong background
@@ -16,7 +17,7 @@ const AboutSection = () => {
         downtime, you might find me working on my side projects, learning a new
         technology, or brainstorming the next big project.
       </p>
-      <p className="pb-4 opacity-60">
+      <p className="opacity-60">
         Let&apos;s connect and create something amazing!
       </p>
     </section>

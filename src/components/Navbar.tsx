@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className="flex flex-col items-end gap-y-4">
+    <nav className="my-auto hidden flex-col items-end gap-y-4 sm:flex">
       <Link
         href="#about"
         className={`hover-underline-animation w-fit ${active === "about" ? "active-underline" : ""}`}
